@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Bio - MAHARISH BALAKUMAR B</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .bio-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .bio-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .bio-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .bio-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1976d2;
+            color: rgb(225, 18, 18);
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-container">
+        <h1>MAHARISH BALAKUMAR B</h1>
+        <h3>B.Tech Computer Science & Engineering Student</h3>
+        <img src="C:\Users\mahar\Downloads\20250412_122228.jpg" alt="Profile photo" class="bio-image">
+
+        <div class="bio-columns">
+            <div class="bio-column">
+                <h4>About Me</h4>
+                <p>
+                    Hi, I'm B.MAHARISH BALAKUMAR. I completed my schooling at Vikaasa School, Madurai.
+                    Currently pursuing my B.Tech in Computer Science and Engineering at Karunya University.
+                    Passionate about solving real-world problems through programming and system design.
+                </p>
+
+                <h4>Academic Interests</h4>
+                <ul>
+                    <li>SQL</li>
+                    <li>JAVA Programming</li>
+                    <li>Python programming</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Data Analytics</li>
+                </ul>
+
+                <h4>Skills</h4>
+                <ul>
+                    <li>Programming Languages: Python, C, Java</li>
+                    <li>Web Technologies: HTML, CSS, JavaScript</li>
+                    <li>Tools: VS Code</li>
+                    <li>Database: MySQL</li>
+                </ul>
+            </div>
+
+            <div class="bio-column">
+                <h4>Projects</h4>
+                <ul>
+                    <li><strong>Online Banking Transaction Record</strong> – Secure logging system using Unix/Linux tools.</li>
+                    <li><strong>Smart Traffic System</strong> – Automated traffic control based on real-time congestion.</li>
+                </ul>
+
+                <h4>Certifications</h4>
+                <ul>
+                    <li>NPTEL: Cloud Computing Essentials</li>
+                    <li>Oracle Academy: Java Foundations</li>
+                </ul>
+
+                <h4>Contact</h4>
+                <p>
+                    📧 Email: <a href="mailto:maharishbala@gmail.com">maharishbala@gmail.com</a><br>
+                    📍 Location: Madurai, Tamil Nadu, India<br>
+                    📞 Phone: 9363244011
+                </p>
+            </div>
+        </div>
+
+        <!-- HTML Form Section -->
+        <h3>Contact Me Form</h3>
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>Send Me a Message</legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+                <label for="topic">Interested Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="web">Web Development</option>
+                    <option value="data">Data Science</option>
+                    <option value="cloud">Cloud Computing</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
